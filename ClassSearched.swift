@@ -20,13 +20,13 @@ class ClassSearched: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var TAPicker: UIPickerView!
     
     @IBOutlet weak var titleLabel: UILabel!
-    var classTitle : String!
+    var classTitle : String = ""
+   
     let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
-    var classInfo:[String:String
+        var classInfo:[String:String
     ] = ["AA 100": "Introduction to Aeronautics & Astronautics", "CS 147" : "Introduction to Human Computer Interaction Design", "Math 21": "Calculus", "SpanLang 3": "First-Year Spanish, Third Quarter", "SymSys 1":"SymSys 1: Minds and Machines", "TAPS 103": "Beginning Improvising", "Psych 124":"Brain Plasticity", "CS 106A": "Intro to Programming", "MS&E 193": "Technology and National Security", "CME 100":"Linear Algebra"]
    
-   
-    
+    var n = 0;
     override func viewDidLoad() {
         super.viewDidLoad()
         TAPicker.delegate = self
@@ -50,11 +50,13 @@ class ClassSearched: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             }
         }
 }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    func numberOfComponents(in
+        pickerView: UIPickerView) -> Int {
              return 1    }
          
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 1 {
+           
             return TApickerData.count
         } else{
             return timePickerData.count
@@ -69,12 +71,13 @@ class ClassSearched: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         }
     }
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+  
         if segue.identifier == "QRCodeSegue" {
         let destinationVC = segue.destination as! QRCode
-        destinationVC.className =  classTitle
+            destinationVC.className =  classTitle
         }
         else {
-            
+            print("check")
         }
        
     }
