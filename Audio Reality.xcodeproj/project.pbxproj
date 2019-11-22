@@ -15,6 +15,8 @@
 		613152B1237A565000CB7AC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613152AF237A565000CB7AC9 /* LaunchScreen.storyboard */; };
 		613152BC237A565100CB7AC9 /* Audio_RealityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613152BB237A565100CB7AC9 /* Audio_RealityTests.swift */; };
 		613152C7237A565100CB7AC9 /* Audio_RealityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613152C6237A565100CB7AC9 /* Audio_RealityUITests.swift */; };
+		613ECCCD237E7D8B0078E9CA /* StudentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ECCCC237E7D8B0078E9CA /* StudentSearch.swift */; };
+		6170E573237F1F6A0010455B /* ClassSearched.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6170E572237F1F6A0010455B /* ClassSearched.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		613152C2237A565100CB7AC9 /* Audio RealityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio RealityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		613152C6237A565100CB7AC9 /* Audio_RealityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_RealityUITests.swift; sourceTree = "<group>"; };
 		613152C8237A565100CB7AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613ECCCC237E7D8B0078E9CA /* StudentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSearch.swift; sourceTree = "<group>"; };
+		6170E572237F1F6A0010455B /* ClassSearched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearched.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 		61315298237A564F00CB7AC9 = {
 			isa = PBXGroup;
 			children = (
+				6170E572237F1F6A0010455B /* ClassSearched.swift */,
+				613ECCCC237E7D8B0078E9CA /* StudentSearch.swift */,
 				613152A3237A564F00CB7AC9 /* Audio Reality */,
 				613152BA237A565100CB7AC9 /* Audio RealityTests */,
 				613152C5237A565100CB7AC9 /* Audio RealityUITests */,
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6170E573237F1F6A0010455B /* ClassSearched.swift in Sources */,
 				613152A9237A564F00CB7AC9 /* ViewController.swift in Sources */,
 				613152A5237A564F00CB7AC9 /* AppDelegate.swift in Sources */,
 				613152A7237A564F00CB7AC9 /* SceneDelegate.swift in Sources */,
+				613ECCCD237E7D8B0078E9CA /* StudentSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
