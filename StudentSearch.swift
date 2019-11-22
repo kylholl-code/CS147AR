@@ -11,6 +11,7 @@ import UIKit
 class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTable: UITableView!
+   var classTitle : String = ""
     let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
     var searchClass = [String]()
     var searching = false
@@ -37,6 +38,7 @@ class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate
             cell.textLabel?.text = classNames[indexPath.row];
 
         }
+        classTitle = cell.textLabel!.text!
         return cell;
     }
     /*
@@ -49,9 +51,10 @@ class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate
     }
     */
  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   var array : NSMutableArray = NSMutableArray()
-array.addObject(label1.text!)
-   array.addObject(label2.text!)
+     
+    let destinationVC = segue.destination as! ClassSearched
+destinationVC.classTitle = classTitle
+
        
     }
     

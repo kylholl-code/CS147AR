@@ -8,36 +8,78 @@
 
 import UIKit
 
-class ClassSearched: UIViewController {
-    var dataSourceArray : NSMutableArray!
-    var searchTerm:String! = ""
-    let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
-    let classTitles = ["AA 100: Introduction to Aeronautics & Astronautics", "CS 147: Introduction to Human Computer Interaction Design", "Math 19: Calculus", "SpanLang 3: First-Year Spanish, Third Quarter", "SymSys 1: Minds and Machines", "TAPS 103: Beginning Improvising"]
+class ClassSearched: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+   
+    
+    var TApickerData: [String] = [String]();
+    var timePickerData: [String] = [String]();
+
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var TimePicker: UIPickerView!
+    @IBOutlet weak var TAPicker: UIPickerView!
+    
     @IBOutlet weak var titleLabel: UILabel!
+    var classTitle : String!
+    let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
+    var classInfo:[String:String
+    ] = ["AA 100": "Introduction to Aeronautics & Astronautics", "CS 147" : "Introduction to Human Computer Interaction Design", "Math 21": "Calculus", "SpanLang 3": "First-Year Spanish, Third Quarter", "SymSys 1":"SymSys 1: Minds and Machines", "TAPS 103": "Beginning Improvising", "Psych 124":"Brain Plasticity", "CS 106A": "Intro to Programming", "MS&E 193": "Technology and National Security", "CME 100":"Linear Algebra"]
+   
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel?.text = sea
-        rchTerm
-        if classNames.contains(searchTerm){
-            titleLabel?.text = searchTerm
-
+        TAPicker.delegate = self
+        TAPicker.dataSource = self
+        TApickerData = ["Holland", "Rolon", "Kotipalli"]
+        timePickerData = ["1 PM", "3PM"]
+        titleLabel?.text = classTitle
+        if classNames.contains(classTitle){
+            titleLabel?.text = classTitle
+        
         }
         else {
             titleLabel?.text = "Class not found"
 
         }
-        // Do any additional setup after loading the view.
+        
+        let classInfoKeys = [String](classInfo.keys)
+        for (key) in classInfoKeys{
+            if (key == classTitle) {
+                descriptionLabel?.text = classInfo[key]
+            }
+        }
+}
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+             return 1    }
+         
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if pickerView.tag == 1 {
+            return TApickerData.count
+        } else{
+            return timePickerData.count
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView.tag == 1 {
+        return TApickerData[row]
+        }else{
+        return timePickerData[row]
+        }
     }
-    */
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "QRCodeSegue" {
+        let destinationVC = segue.destination as! QRCode
+        destinationVC.className =  classTitle
+        }
+        else {
+            
+        }
+       
+    }
+           
+        }
 
-}
+
+
