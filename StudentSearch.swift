@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTable: UITableView!
@@ -15,12 +14,15 @@ class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate
     let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
     var searchClass = [String]()
     var searching = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     
         //set search text to passcode
       
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if searching {
