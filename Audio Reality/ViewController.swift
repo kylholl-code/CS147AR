@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
     //set username and password to textfield entries
         
-        userTextField?.text = username
-        passTextField?.text = password
+        username = userTextField.text!
+        password = passTextField.text!
 
     }
 

@@ -16,6 +16,9 @@
 		613152BC237A565100CB7AC9 /* Audio_RealityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613152BB237A565100CB7AC9 /* Audio_RealityTests.swift */; };
 		613152C7237A565100CB7AC9 /* Audio_RealityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613152C6237A565100CB7AC9 /* Audio_RealityUITests.swift */; };
 		613ECCCD237E7D8B0078E9CA /* StudentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613ECCCC237E7D8B0078E9CA /* StudentSearch.swift */; };
+		6166241A239365CC008AA553 /* AddClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61662419239365CC008AA553 /* AddClass.swift */; };
+		6166241C239370C2008AA553 /* RequestedClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6166241B239370C2008AA553 /* RequestedClasses.swift */; };
+		616D2C552395CAE2000B2C98 /* confirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D2C542395CAE2000B2C98 /* confirmation.swift */; };
 		6170E573237F1F6A0010455B /* ClassSearched.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6170E572237F1F6A0010455B /* ClassSearched.swift */; };
 		61AEE4682387D240005FC243 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AEE4672387D240005FC243 /* QRCode.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +56,9 @@
 		613152C6237A565100CB7AC9 /* Audio_RealityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_RealityUITests.swift; sourceTree = "<group>"; };
 		613152C8237A565100CB7AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613ECCCC237E7D8B0078E9CA /* StudentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentSearch.swift; sourceTree = "<group>"; };
+		61662419239365CC008AA553 /* AddClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClass.swift; sourceTree = "<group>"; };
+		6166241B239370C2008AA553 /* RequestedClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestedClasses.swift; sourceTree = "<group>"; };
+		616D2C542395CAE2000B2C98 /* confirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = confirmation.swift; sourceTree = "<group>"; };
 		6170E572237F1F6A0010455B /* ClassSearched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassSearched.swift; sourceTree = "<group>"; };
 		61AEE4672387D240005FC243 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,9 @@
 				613152A6237A564F00CB7AC9 /* SceneDelegate.swift */,
 				613152A8237A564F00CB7AC9 /* ViewController.swift */,
 				613152AA237A564F00CB7AC9 /* Main.storyboard */,
+				616D2C542395CAE2000B2C98 /* confirmation.swift */,
+				6166241B239370C2008AA553 /* RequestedClasses.swift */,
+				61662419239365CC008AA553 /* AddClass.swift */,
 				61AEE4672387D240005FC243 /* QRCode.swift */,
 				613152AD237A565000CB7AC9 /* Assets.xcassets */,
 				613152AF237A565000CB7AC9 /* LaunchScreen.storyboard */,
@@ -269,10 +278,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6170E573237F1F6A0010455B /* ClassSearched.swift in Sources */,
+				6166241C239370C2008AA553 /* RequestedClasses.swift in Sources */,
 				613152A9237A564F00CB7AC9 /* ViewController.swift in Sources */,
 				613152A5237A564F00CB7AC9 /* AppDelegate.swift in Sources */,
+				616D2C552395CAE2000B2C98 /* confirmation.swift in Sources */,
 				613152A7237A564F00CB7AC9 /* SceneDelegate.swift in Sources */,
 				613ECCCD237E7D8B0078E9CA /* StudentSearch.swift in Sources */,
+				6166241A239365CC008AA553 /* AddClass.swift in Sources */,
 				61AEE4682387D240005FC243 /* QRCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

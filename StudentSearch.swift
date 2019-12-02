@@ -53,10 +53,12 @@ class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate
     }
     */
  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
+    if segue.identifier == "classSearchedSegue" {
+    print("checked")
     let destinationVC = segue.destination as! ClassSearched
 destinationVC.classTitle = classTitle
-
+    
+    }
        
     }
     
