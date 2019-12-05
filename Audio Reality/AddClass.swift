@@ -8,13 +8,15 @@
 
 import UIKit
 
+  var requests = [String:String]()
+
 class AddClass: UIViewController {
     
     
     @IBOutlet weak var codeTextField: UITextField!
     
     @IBOutlet weak var numTextField: UITextField!
-    var requests = [String:String]()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,12 +28,10 @@ class AddClass: UIViewController {
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //test for no entry, put up error message
         
-        requests[codeTextField.text!] =  numTextField.text
-        print(requests)
+        requests[codeTextField.text!] =  "pending"
         
           if segue.identifier == "confirmSegue" {
           let destinationVC = segue.destination as! confirmation
-          
           }
           else {
           }
