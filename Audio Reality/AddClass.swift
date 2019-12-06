@@ -27,8 +27,10 @@ class AddClass: UIViewController {
    
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //test for no entry, put up error message
-        
+        if (codeTextField.text != nil){
         requests[codeTextField.text!] =  "pending"
+            print("checkhhgre")
+    }
         
           if segue.identifier == "confirmSegue" {
           let destinationVC = segue.destination as! confirmation

@@ -11,18 +11,17 @@ import UIKit
 var enrolledClasses = ["CS 147", "AA 100", "TAPS 103"]
 class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
+
     @IBOutlet weak var searchTable: UITableView!
    var classTitle : String = ""
     let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
     var searchClass = [String]()
     var searching = false
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        //set search text to passcode
-      
     }
     
     
@@ -37,12 +36,14 @@ class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         if searching {
-             cell.textLabel?.text = searchClass[indexPath.row];
+            cell.textLabel?.text = searchClass[indexPath.row];
+            print(indexPath.row, "1")
         }else{
             cell.textLabel?.text = classNames[indexPath.row];
+            print(indexPath.row, "2")
 
         }
-        classTitle = cell.textLabel!.text!
+        classTitle = (cell.textLabel!.text!)
         return cell;
     }
     /*

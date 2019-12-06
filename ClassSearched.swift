@@ -24,7 +24,7 @@ class ClassSearched: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
    
     let classNames = ["CS 147", "CS 106A", "Psych 124", "Math 21", "CME 100", "AA 100", "MS&E 193", "SpanLang 3", "SymSys 1", "TAPS 103"]
         var classInfo:[String:String
-    ] = ["AA 100": "Introduction to Aeronautics & Astronautics", "CS 147" : "Intro to HCI Design", "Math 21": "Calculus", "SpanLang 3": "First-Year Spanish, Third Quarter", "SymSys 1": "Minds and Machines", "TAPS 103": "Beginning Improvising", "Psych 124":"Brain Plasticity", "CS 106A": "Intro to Programming", "MS&E 193": "Technology and National Security", "CME 100":"Linear Algebra"]
+    ] = ["AA 100": "Introduction to AA", "CS 147" : "Intro to HCI Design", "Math 21": "Calculus", "SpanLang 3": "First-Year Spanish", "Psych 124":"Brain Plasticity", "CS 106A": "Intro to Programming", "MS&E 193": "Tech and National Security", "CME 100":"Linear Algebra"]
    
     var n = 0;
     override func viewDidLoad() {
