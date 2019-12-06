@@ -556,9 +556,8 @@
         <image name="Time" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rB3-u1-mYd"/>
         <segue reference="2iR-wU-MWM"/>
-        <segue reference="10Z-C2-YXS"/>
+        <segue reference="rIp-hD-2SW"/>
         <segue reference="qyt-ou-Gvk"/>
     </inferredMetricsTieBreakers>
 </document>
