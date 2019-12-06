@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+var enrolledClasses = ["CS 147", "AA 100", "TAPS 103"]
 class StudentSearch: UIViewController, UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTable: UITableView!

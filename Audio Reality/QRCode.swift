@@ -16,11 +16,4 @@ class QRCode: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         
-        let destinationVC = segue.destination as! ClassSearched
-    destinationVC.classTitle = className
-
-           
-        }
 }

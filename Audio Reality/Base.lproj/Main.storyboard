@@ -105,6 +105,9 @@
                                 <state key="normal" title="CS 147">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KP9-ho-qfA" kind="showDetail" id="2iR-wU-MWM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LG7-dL-J88">
                                 <rect key="frame" x="22" y="229" width="162" height="57"/>
@@ -113,6 +116,9 @@
                                 <state key="normal" title="AA 100">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KP9-ho-qfA" kind="showDetail" id="N0O-c8-Q9W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sP0-20-AOY">
                                 <rect key="frame" x="28" y="294" width="162" height="57"/>
@@ -121,6 +127,9 @@
                                 <state key="normal" title="TAPS 103">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="KP9-ho-qfA" kind="showDetail" id="W1Y-r1-VHA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2V-6p-xhi">
                                 <rect key="frame" x="22" y="395" width="195" height="48"/>
@@ -231,6 +240,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84d-YH-OLk">
+                                <rect key="frame" x="0.0" y="29" width="82" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cLc-qU-rjf" kind="showDetail" id="qyt-ou-Gvk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96885663270950317" green="0.98713737726211548" blue="0.98733919858932495" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -426,7 +446,7 @@
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KP9-ho-qfA" kind="show" identifier="QRCodeSegue" id="762-0b-IVE"/>
+                                    <segue destination="cLc-qU-rjf" kind="showDetail" id="K4u-C4-GEP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-RT-kLf">
@@ -503,7 +523,7 @@
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uce-3s-29w" kind="show" id="fWr-Vr-krb"/>
+                                    <segue destination="cLc-qU-rjf" kind="showDetail" id="zn8-lD-pTX"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Look at the QR code with " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjs-xo-g4u">
@@ -539,8 +559,8 @@
         <image name="Time" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fWr-Vr-krb"/>
+        <segue reference="2iR-wU-MWM"/>
         <segue reference="rIp-hD-2SW"/>
-        <segue reference="Sn6-Kk-GFn"/>
+        <segue reference="zn8-lD-pTX"/>
     </inferredMetricsTieBreakers>
 </document>
