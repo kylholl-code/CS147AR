@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A744C70B-F061-4DD5-B9B2-95B8BDE63EEA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B302F773-E890-4B2F-89C0-11780B565030"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "StudentSearch.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Audio Reality/QRCode.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "QRCode"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 7f635ad1d1c84104"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.className.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "131">
+               </Location>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 3251cfea7e2d9248"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.className.setter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "153">
+               </Location>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 206378c1ec5ba549"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.className.modify : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 2ec1922a20a9827f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.className.modify : Swift.Optional&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 977943045ead0bef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Audio_Reality.QRCode"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "BF7795A7-F349-4AA8-9C89-6F957E546E59 - 9a70e33b135e5924"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Audio_Reality.QRCode.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Audio_Reality.QRCode&gt;"
+                  moduleName = "Audio Reality"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kylie/Documents/Audio%20Reality/Audio%20Reality/QRCode.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "90">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
